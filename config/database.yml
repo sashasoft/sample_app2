@@ -1,0 +1,23 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  username: sample_app2
+  password: sample_app2
+  pool: 5
+  host: localhost
+  
+
+development:
+  <<: *default
+  database: sample_app2_development
+  
+  
+test:
+  <<: *default
+  database: sample_app2_test
+  
+  
+production:
+  <<: *default
+  database: sample_app2_production
+
