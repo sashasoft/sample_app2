@@ -7,6 +7,8 @@ gem 'pg'
 #gem 'bootstrap-sass', '~> 3.2.0.1'
 gem 'bootstrap-sass', '2.3.2.0'
 
+gem 'bcrypt-ruby', '~> 3.1.5'
+
 
 group :development, :test do
   gem 'rspec-rails', '2.13.1'
@@ -19,7 +21,7 @@ end
 group :test do
   gem 'selenium-webdriver', '2.35.1'
   gem 'capybara', '2.1.0'
-  gem 'minitest'
+  gem 'minitest', '~> 5.4.2'
 end
 
 group :production do
@@ -50,7 +52,7 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
 
 # Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
+gem 'bcrypt', '~> 3.1.7'
 
 # Use unicorn as the app server
 # gem 'unicorn'
