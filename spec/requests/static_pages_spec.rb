@@ -14,9 +14,9 @@ describe "Static pages" do
     let(:page_title) { '' }
 
     it_should_behave_like "all static pages"
-    #it { should have_content('Sample App') }
+    it { should have_content('Sample App') }
     #it { should have_title(full_title('')) }
-    it { should_not have_title('| Home') }
+    #it { should_not have_title('| Home') }
   end
 
   describe "Help page" do
@@ -57,14 +57,14 @@ describe "Static pages" do
     click_link "Help"
     expect(page).to have_title(full_title('Help'))
     
-   #click_link "Contact"
-   #expect(page).to have_title(full_title('Contact'))
+#click_link "Contact"
+#expect(page).to have_title(full_title('Contact'))
     
     click_link "Home"
     click_link "Sign up now!"
     expect(page).to have_title(full_title('Sign up'))
     
-   #click_link "sample app"
-   #expect(page).to have_title(full_title('Sample app'))
+#click_link "sample app"
+#expect(page).to have_title(full_title('Sample app'))
   end
 end

@@ -16,12 +16,15 @@ group :development, :test do
   gem 'spork-rails', '~> 4.0.0'
   gem 'guard-spork', '1.5.0'
   gem 'childprocess', '0.5.3'
+  
 end
 
 group :test do
   gem 'selenium-webdriver', '2.35.1'
   gem 'capybara', '2.1.0'
   gem 'minitest', '~> 5.4.2'
+  #gem 'factory_girl', '~> 4.4.0'
+  gem 'factory_girl_rails', '~> 4.4.1'
 end
 
 group :production do
