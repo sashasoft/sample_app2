@@ -12,7 +12,7 @@ development:
   database: sample_app2_development
   
   
-test:
+test: &test
   <<: *default
   database: sample_app2_test
   
@@ -21,3 +21,6 @@ production:
   <<: *default
   database: sample_app2_production
 
+
+cucumber:
+  <<: *test
